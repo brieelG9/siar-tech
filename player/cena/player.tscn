@@ -237,18 +237,19 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_kar0a"]
-size = Vector2(66, 139)
+size = Vector2(42, 83)
 
 [node name="player" type="CharacterBody2D"]
+collision_mask = 2
 script = ExtResource("1_4txa2")
 
 [node name="animacao" type="AnimatedSprite2D" parent="."]
 position = Vector2(235.2, 134.4)
-scale = Vector2(5, 5)
+scale = Vector2(3, 3)
 sprite_frames = SubResource("SpriteFrames_re370")
 animation = &"idle"
 
 [node name="colisao" type="CollisionShape2D" parent="."]
-position = Vector2(228, 204.5)
+position = Vector2(229, 176.5)
 scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_kar0a")

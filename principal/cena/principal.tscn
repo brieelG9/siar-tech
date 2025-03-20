@@ -1,0 +1,31 @@
+[gd_scene load_steps=6 format=3 uid="uid://dl7gvfh4hsbcd"]
+
+[ext_resource type="PackedScene" uid="uid://dyemjquk0tnmy" path="res://player/cena/player.tscn" id="1_7kiep"]
+[ext_resource type="PackedScene" uid="uid://d0mn8s615d0nc" path="res://chão/cena/level.tscn" id="2_inuyu"]
+[ext_resource type="Texture2D" uid="uid://b8d4u7by0ynqx" path="res://oak_woods_v1.0/background/background_layer_1.png" id="3_whyw6"]
+[ext_resource type="Texture2D" uid="uid://bq6w5gwl8e2fk" path="res://oak_woods_v1.0/background/background_layer_2.png" id="4_3ghbj"]
+[ext_resource type="Texture2D" uid="uid://bvqdpq16fkv8i" path="res://oak_woods_v1.0/background/background_layer_3.png" id="5_21glc"]
+
+[node name="principal" type="Node2D"]
+
+[node name="level" parent="." instance=ExtResource("2_inuyu")]
+z_index = 1
+
+[node name="player" parent="." instance=ExtResource("1_7kiep")]
+z_index = 1
+position = Vector2(47, 358)
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 1280.0
+offset_bottom = 720.0
+texture = ExtResource("3_whyw6")
+
+[node name="TextureRect2" type="TextureRect" parent="."]
+offset_right = 1280.0
+offset_bottom = 720.0
+texture = ExtResource("4_3ghbj")
+
+[node name="TextureRect3" type="TextureRect" parent="."]
+offset_right = 1280.0
+offset_bottom = 720.0
+texture = ExtResource("5_21glc")
