@@ -1,0 +1,37 @@
+[gd_scene load_steps=5 format=3 uid="uid://b60bds3m70pgn"]
+
+[ext_resource type="Script" uid="uid://ctyjvgaf5iml8" path="res://addons/awesome_splash/core/SplashContainer.gd" id="1_6peo6"]
+[ext_resource type="PackedScene" uid="uid://blruu7c7gkkic" path="res://title screen/cena/title_screen.tscn" id="2_6peo6"]
+[ext_resource type="PackedScene" uid="uid://bvp1p5sxea7hc" path="res://src/demo_collection/twist/splash_screen.tscn" id="3_1yx0k"]
+[ext_resource type="PackedScene" uid="uid://b5aj1thqf6837" path="res://src/demo_collection/zoom/splash_screen.tscn" id="4_4hdp7"]
+
+[node name="SplashContainer" type="Node2D"]
+position = Vector2(-2, 0)
+script = ExtResource("1_6peo6")
+custom_node/type = 0
+custom_node/default_time = 1.0
+skip/type = 0
+move_to_scene = ExtResource("2_6peo6")
+trainsition_type = 5
+min_pixel = 1.0
+max_pixel = 128.0
+transition_time = 1.5
+
+[node name="SplashTwist" parent="." instance=ExtResource("3_1yx0k")]
+logo_color = Color(0, 0.6, 1, 1)
+font_color = Color(0, 0.6, 1, 1)
+
+[node name="SplashZoom" parent="." instance=ExtResource("4_4hdp7")]
+logo_path = "uid://bxtdma4421nwd"
+title = "PixelsPioneers"
+description = "Informática Geração 9"
+font_color = Color(0.566003, 0.245601, 1, 1)
+
+[node name="SplashZoom2" parent="." instance=ExtResource("4_4hdp7")]
+logo_path = "uid://d1q7c22bh2xvk"
+title = "E.E.E.P Deputado José Maria Melo"
+description = "Professor: Bruno Emanuel"
+background_color = Color(1, 1, 1, 1)
+font_color = Color(0, 0, 0, 1)
+title_font_size = 120.0
+description_font_size = 80.0

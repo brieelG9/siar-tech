@@ -13,13 +13,24 @@ config_version=5
 config/name="SiaráTech"
 run/main_scene="uid://dl7gvfh4hsbcd"
 config/features=PackedStringArray("4.4", "Mobile")
+boot_splash/bg_color=Color(0, 0, 0, 1)
+boot_splash/show_image=false
 config/icon="res://icon.svg"
+
+[autoload]
+
+gd="*res://addons/godot-action/utils_gd_action.tscn"
+sp="*res://addons/awesome_splash/utils_splash.gd"
 
 [display]
 
 window/size/viewport_width=1280
 window/size/viewport_height=720
 window/stretch/mode="canvas_items"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/awesome_splash/plugin.cfg", "res://addons/godot-action/plugin.cfg")
 
 [input]
 

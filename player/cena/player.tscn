@@ -251,5 +251,4 @@ animation = &"idle"
 
 [node name="colisao" type="CollisionShape2D" parent="."]
 position = Vector2(229, 176.5)
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_kar0a")

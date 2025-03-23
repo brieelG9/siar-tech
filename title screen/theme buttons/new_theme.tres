@@ -1,0 +1,29 @@
+[gd_resource type="Theme" load_steps=6 format=3 uid="uid://b021q03twr53q"]
+
+[ext_resource type="FontFile" uid="uid://dcsueulh45cqj" path="res://fontes/GrapeSoda.ttf" id="1_q28lw"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_q28lw"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fien4"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kkesb"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_02gxe"]
+bg_color = Color(0.0532, 0.17038, 0.28, 0)
+corner_radius_top_right = 5
+corner_radius_bottom_left = 5
+
+[resource]
+Button/colors/font_hover_color = Color(0.724643, 0.724643, 0.724643, 1)
+Button/colors/font_pressed_color = Color(0.2046, 0.37158, 0.66, 1)
+Button/constants/align_to_largest_stylebox = 0
+Button/fonts/font = ExtResource("1_q28lw")
+Button/styles/disabled = null
+Button/styles/focus = SubResource("StyleBoxFlat_q28lw")
+Button/styles/hover = SubResource("StyleBoxFlat_fien4")
+Button/styles/hover_mirrored = null
+Button/styles/normal = SubResource("StyleBoxFlat_kkesb")
+Button/styles/pressed = SubResource("StyleBoxFlat_02gxe")
